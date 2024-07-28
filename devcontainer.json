@@ -20,5 +20,9 @@
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 
-    "remoteEnv": { "PATH": "${containerEnv:PATH}:/workspaces/test1/opensmile/build/progsrc/smilextract" }
+    "remoteEnv": { 
+        "PATH": "${containerEnv:PATH}:/workspaces/test1/opensmile/build/progsrc/smilextract",
+        // openSmileをデバッグモードで
+        "CMAKE_BUILD_TYPE": "Debug"
+    }
 }
